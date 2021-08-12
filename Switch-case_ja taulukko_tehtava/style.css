@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+
+  .flex-container {
+    display: flex;
+    background-color: white;
+  }
+
+
+/* 1. neliön muotilu (tehtävä 1)*/
+  .flex-container > div1 {
+    background-color:orange;
+    margin: 10px;
+    padding: 60px;
+    font-size: 14px;
+  }
+
+
+ /* 2. neliön muotoilu (tehtävä 2)  */
+  .flex-container > div2 {
+    background-color: pink;
+    margin: 10px;
+    padding: 20px;
+    font-size: 14px;
+    width: 500px;
+    height: 300px;
+  }
+
+
+/* 3. neliön muotoilu (tehtävä 3)*/
+  .flex-container > div3 {
+    background-color:yellow;
+    margin: 10px;
+    padding: 60px;
+    font-size: 14px;
+
+  }
+
+
+
+/*tehtävä 3:seen numero taulukon muotoilu */
+  table, td, th {
+    border: 2px solid black;
+      text-align: center;
+    }
+
+
+ table, {
+    width: 30%;
+    border-collapse: separate;
+  }
+
+  .flex-container > div4 {
+    background-color:grey;
+    margin: 10px;
+    padding: 60px;
+    font-size: 14px;
+    width: 500px;
+    height: 400px;
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+  <style>
+    .listitem {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+   </ul>
+
+  <script>
+   document.body.style.fontFamily = 'Arial, sans-serif';
+   document.getElementById('nickname').innerHTML = 'Jarmo Partanen';
+   document.getElementById('favorites').innerHTML = '56';
+   document.getElementById('hometown').innerHTML = 'Vantaa, FI';
+   var items = document.getElementsByTagName('li');
+   for (var i = 0; i < items.length; i++) {
+      items[i].className = 'listitem';
+   }
+
+    var myPic = document.createElement('img');
+    myPic.src = 'http://gotocon.com/dl/jaoo_aus2008/photos/speakers/Pamela_Fox.jpg';
+    document.body.appendChild(myPic);
+  </script>
+</body>
+</html>

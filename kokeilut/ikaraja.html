@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <title>kokeilu</title>
+  </head>
+  <body>
+
+<!--  <button onclick="jarjestaNumerot()"> Järjestä </button>   -->
+
+    <!--   <p id ="jarjestetty"></p>   -->
+    <button onclick="lupaAjaa()"> MillaAjan </button>
+     <p id="Age"></p>
+
+<script>
+
+  function lupaAjaa()
+  {
+  var annaIkasi = [19];
+  var omaika;
+  var lupa;
+
+  if(omaika < 16) {
+  lupa = " Aja polkupyörää";
+  } else if(omaika < 17) {
+  lupa =" Voit ajaa mopoa";
+  } else if(omaika < 18) {
+  lupa = "Voit ajaa mopoa";
+  } else {
+      lupa = "Voit ajaa autoa ja kaikkia muitakin ajo valineita";
+    }
+    document.getElementById("Age").innerHTML = lupa;
+  }
+
+
+
+
+</script>
+
+  </body>
+</html>

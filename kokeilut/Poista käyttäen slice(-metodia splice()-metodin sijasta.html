@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function kaytaSlicea(numerot)
+      {
+        var uusiTaulu = [...numerot];
+        return uusiTaulu.slice(0,5);
+      }
+      var fibo=[0, 1, 1, 2, 3, 5, 8, 13, 21];
+      console.log(kaytaSlicea(fibo));
+      //tulostaa -> [0, 1, 1, 2, 3]
+    </script>
+
+  </body>
+</html>

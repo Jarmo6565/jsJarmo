@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //.reduce()-metodilla voidaan analysoida taulukkoa haluamallaan tavalla:
+      var elukat = [
+      {laji:'Kissa', jalkoja:4},
+      {laji:'Kana', jalkoja: 2},
+      {laji:'Hämähäkki', jaalkoja: 8}];
+      var jalkojenMaara = elukat.reduce(summa, taulu) => sum + taulu.jalkoja, 0);
+
+      //jos haluamme laskea keskiarvon, se on jo mutkikkaampaa:
+      var laskuri+=1;
+      return summa + laji.jalkoja;
+    },0)/laskuri;
+    console.log(jalkojenKeskiarvo); //-> 4,66666666
+
+    //Huom! Reduce-tehtävässä pitää laittaa ehto:
+    //if(movie.Director == 'Christopher Nolan'), jotta saadaan oikea arvo
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script_1.js" ></script>
+    <script type="text/javascript" src="script_2.js" ></script>
+    <script type="text/javascript" src="script_3.js" ></script>
+    <script type="text/javascript" src="script_4.js" ></script>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <div class="flex-container">
+      <div1>
+        <h1>Tehtävä 1</h1><br>
+        <h3>Tee ohjelma, jolle voit syöttää
+          Scrabble-pelin sanan<br>
+           ja ohjelma laskee kirjain pisteet seuraavasti</h3>
+              <form>
+                <label for="Anna sana">Anna sana:</label><br><br>
+                <input type="text" id="sana" value="Kirjoita tähän" placeholder=""><br><br>
+                  <button type="button" name="button" onclick="sanaPisteet()">Laske kirjainpisteet</button>
+                        </form>
+                        <p id='pisteet'></p>
+                      </div1>
+
+
+                <div2><h1>Tehtävä 2</h1><br>
+                    <h3>Kirjoita ohjelma, joka arpoo lottonumerot ( 7 kpl )</h3>
+                    <form>
+                        <button type="button" name="button" onclick="arvo()">Arvo!</button>
+                          </form>
+                              <p id="numerot"></p>
+                              </div2>
+                                </div>
+
+
+             <div class="flex-container">
+             <div3>
+             <p><h1>Tehtävä 3</h1><br>
+             <h3>Tee ohjelma, joka muuntaa määritetyn (javascriptissa)<br>
+              2-ulotteisen taulukon taulukko muotoon<br><br>
+              Esimerkiksi: [[ 1, 2, 1, 24],[8, 11, 9, 4],[7, 0, 7, 27],[7, 4, 28, 14],[ 3, 10, 26, 7]]</h3>
+              <p id = "taulukko"></p>
+              <button type="button" name="button" onclick="haeNumerot()">Laita taulukoksi</button>
+              </form>
+            </div3>
+
+
+
+
+        <div4><h1>Tehtävä 4 </h1><br>
+              <h3>Kirjoita ohjelma, joka tekee <br>
+                taulukon kaikista kortti pakan<br>
+              korteista (2 sisäkkäistä silmukkaa) ja <br>
+              sen jälkeen sekoittaa "pakan" <br>
+               ja arpoo 5 korttia sieltä  </h3>
+                      <button type="button" name="button" onclick="arvoKortit()">Arvo 5 korttia</button>
+                          <p id = "parttikokka">  </p>
+                        </div4>
+                          </div>
+
+
+
+
+
+
+</body>
+</html>

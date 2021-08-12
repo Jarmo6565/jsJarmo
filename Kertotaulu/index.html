@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hilirimpsis!</title>
+    <script>
+     var tuloste;
+  if (document.title) { //edellinen ehto lyhennettynä
+    tuloste = '<p>Sivun otsikko on: <b>' +
+              document.title + '</b>.</p>';
+  }
+  if (!document.title) { //käänteinen totuusarvo
+    tuloste = '<p>Sivun ulkoinen <b>otsikko puuttuu!</b></p>';
+  }
+  document.write(tuloste);
+
+  var tuloste;
+if (document.title) { //löytyykö otsikko?
+  tuloste = '<p>Sivun otsikko on: <b>' +
+            document.title + '</b>.</p>';
+} else { //muussa tapauksessa:
+  tuloste = '<p>Sivun ulkoinen <b>otsikko puuttuu!</b></p>';
+}
+document.write(tuloste);
+
+var tuloste = (document.title)?
+'<p>Sivun otsikko on: <b>'+ document.title +'</b>.</p>':
+'<p>Sivun ulkoinen <b>otsikko puuttuu!</b></p>';
+document.write(tuloste);  
+
+
+/* Alustetaan muuttuja taulukon alkutägillä: */
+var kertotaulu = "<table border='1'>";
+/* Ulompi silmukka pyörähtää 10 kertaa: */
+for (var rivit=1;rivit<=10;rivit++) {
+  /* Lisätään joka kerralla muuttujaan rivin alkutägi: */
+  kertotaulu += "<tr align='center'>";
+  /* Sisempi silmukka pyörähtää 10 kertaa
+     jokaisen uloimman silmukan kierroksella:  */
+  for (var solut=1;solut<=10;solut++) {
+  /* Lisätään joka kerralla muuttujaan solu,
+     jonka sisältönä kulloisenkin kohdan tulo: */
+    kertotaulu += "<td>"+ rivit * solut +"</td>";
+    /* Esim. jos menossa olisi uloimman 3. ja sisemmän
+       silmukan 7. kierros niin yo. kohta olisi:
+       kertotaulu += "<td>"+ 3 * 7 +"</td>"; */
+  }//sisempi silmukka päättyy
+  /* Lisätään joka kerralla muuttujaan rivin lopputägi: */
+  kertotaulu += "</tr>";
+}//ulompi silmukka päättyy
+/* Viimeistellään muuttuja taulukon lopputägillä: */
+kertotaulu += "</table>";
+/* Kirjoitetaan lopuksi muuttujan sisältö dokumenttiin: */
+document.write(kertotaulu);
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,90 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.flex-container {
+  display: flex;
+  background-color: white;
+}
+
+.flex-container > div1 {
+  background-color:orange;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+
+.flex-container > div2 {
+  background-color: pink;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+
+
+.flex-container > div3 {
+  background-color: lightyellow;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+.flex-container > div4 {
+  background-color: lightgreen;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+.flex-container > div5 {
+  background-color: lightblue;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+.flex-container > div6 {
+  background-color: red;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+.flex-container > div7 {
+  background-color: pink;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+.flex-container > div8 {
+  background-color: violet;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+.flex-container > div9 {
+  background-color: lightblue;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+.flex-container > div10 {
+  background-color: gold;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
+
+.flex-container > div11 {
+  background-color: peachpuff;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}
