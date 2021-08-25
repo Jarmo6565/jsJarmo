@@ -57,5 +57,7 @@ function etsiSuurin()
       suurin = l1;
     }
     document.write("Annoit luvut: " + l1 + ' ' + l2 + ' ' + l3 + ' ' + l4 + ' ' + l5);
-    document.write("<br>Suurin niistÃ¤ on: " + suurin);
+  //  document.write("<br>Suurin niistä on: " + suurin);
+    document.getElementById("suurin niistä on").innerHTML = suurin;
+
   }
