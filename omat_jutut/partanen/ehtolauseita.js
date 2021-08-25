@@ -9,20 +9,20 @@ function jarjesta()
   {
     if(luku2 < luku3)
     {
-      document.write("Lukujen jÃ¤rjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
+      document.write("Lukujen jarjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
     }
     else {
-      document.write("Lukujen jÃ¤rjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
+      document.write("Lukujen jarjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
     }
   }
   else if(luku2 < luku1 && luku2 < luku3)
   {
     if(luku1<luku3)
     {
-      document.write("Lukujen jÃ¤rjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
+      document.write("Lukujen jarjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
     }
     else {
-      document.write("Lukujen jÃ¤rjestys: " + luku2 + ' ' + luku3 + ' ' + luku1);
+      document.write("Lukujen jarjestys: " + luku2 + ' ' + luku3 + ' ' + luku1);
 
     }
   }
@@ -30,10 +30,10 @@ function jarjesta()
     {
       if(luku1 < luku2)
       {
-        document.write("Lukujen jÃ¤rjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
+        document.write("Lukujen jarjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
       }
       else {
-        document.write("Lukujen jÃ¤rjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
+        document.write("Lukujen jarjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
 
       }
     }
@@ -90,7 +90,7 @@ function etsiSuurin()
     var age = parseInt(document.getElementById('ika').value);
     if(age < 16)
     {
-      document.write("Voit ajaa polkupyärää");
+      document.write("Voit ajaa polkupyÃ¶rÃ¤Ã¤");
     }
     else if(age < 18)
     {
