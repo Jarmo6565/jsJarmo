@@ -57,7 +57,10 @@ function etsiSuurin()
       suurin = l1;
     }
     document.write("Annoit luvut: " + l1 + ' ' + l2 + ' ' + l3 + ' ' + l4 + ' ' + l5);
-  //  document.write("<br>Suurin niistä on: " + suurin);
-    document.getElementById("suurin niistä on").innerHTML = suurin;
+    document.write("<br>Suurin niistä on: " + suurin);
+
+
+  //console.log("Annoit luvut: " + l1 + ' ' + l2 + ' ' + l3 + ' ' + l4 + ' ' + l5).innerHTML = suurin;
+    //document.getElementById("suurin niistä on").innerHTML = + l1, l2, l3, l4, l5, suurin;
 
   }

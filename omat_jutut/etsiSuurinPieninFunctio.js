@@ -1,4 +1,7 @@
 
+// Hahaa! Tälle ei tarvinnut taulua!!
+
+
 function etsiSuurinPienin()
 {
 var taulu = [], temp;
@@ -24,14 +27,3 @@ function parillinenPariton(luku)
 
 }
 parillinenPariton(14);
-
-
-
-/*    function parillinenPariton(luku)     
-{
-  if(!luku%2==0){
-        console.log("luku ei ole pariton");
-  }else{
-    console.log("luku on pariton");
-  }
-}    */

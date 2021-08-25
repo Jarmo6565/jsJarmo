@@ -14,20 +14,20 @@ function jarjesta()
   {
     if(luku2 < luku3)
     {
-      document.write("Lukujen jÃ¤rjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
+      document.write("Lukujen järjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
     }
     else {
-      document.write("Lukujen jÃ¤rjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
+      document.write("Lukujen järjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
     }
   }
   else if(luku2 < luku1 && luku2 < luku3)
   {
     if(luku1<luku3)
     {
-      document.write("Lukujen jÃ¤rjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
+      document.write("Lukujen järjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
     }
     else {
-      document.write("Lukujen jÃ¤rjestys: " + luku2 + ' ' + luku3 + ' ' + luku1);
+      document.write("Lukujen järjestys: " + luku2 + ' ' + luku3 + ' ' + luku1);
 
     }
   }
@@ -35,10 +35,10 @@ function jarjesta()
     {
       if(luku1 < luku2)
       {
-        document.write("Lukujen jÃ¤rjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
+        document.write("Lukujen järjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
       }
       else {
-        document.write("Lukujen jÃ¤rjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
+        document.write("Lukujen järjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
 
       }
     }
