@@ -1,0 +1,18 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.flex-container {
+  display: flex;
+  background-color: white;
+}
+
+.flex-container > div1 {
+  background-color:orange;
+  margin: 10px;
+  padding: 60px;
+  font-size: 14px;
+}

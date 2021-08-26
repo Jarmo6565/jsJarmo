@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lottokone</title>
+</head>
+<body>
+
+<h1>Tervetuloa lottoamaan!</h1>
+<p>Nappia painamalla kone arpoo 7 lottonumeroa väliltä 1-39. Onnea peliin!</p>
+<button type="button" onclick="arvo()">Arvo!</button>
+<p id="numerot"></p>
+
+<script>
+function arvo() {
+   var numerot = [];
+
+   while (numerot.length < 7) {
+        numerot.push(randomInt(39));
+   }
+
+   document.getElementById("numerot").innerHTML = numerot.toString();
+}
+
+function randomInt(max) {
+    return Math.floor((Math.random() * max) + 1);
+}
+</script>
+
+</body>
+</html>
