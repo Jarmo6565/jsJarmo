@@ -2,50 +2,107 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>Marvel's comics</title>
 <link rel="stylesheet" href="tyyli.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="tyyli.css">
-<script type="text/javascript" src="script1.js" ></script>
+<script type="text/javascript" src="script.js" ></script>
 <head>
 
   <style>
-
-  body {
-    background-color: #fefbd8;
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
   }
 
-  table {
-    border-collapse: collapse;
-    border: 2px solid black;
-    margin: 100px;
-
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 600px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
   }
 
-  th,td {
-    border: 1px solid black;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+  table, td, th {
+  border: 3px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+}
 
 
-  table.b {
-    table-layout: fixed;
-    width: 280px;
-  }
+  </style>
+  </head>
+  <body>
+  <h1>Marvel's comics</h1>
+
+  <div class="flex-container">
+    <div>  <table class="b">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+      </table></div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <h1>Marvel's comics</h1>
 
 
-  }
-
-
-</style>
-</head>
-<body>
-
-  <h1>The table-layout Property</h1>
-
-
-  <h2>table-layout: fixed; width: 180px:</h2>
   <table class="b">
     <tr>
       <th>Company</th>
@@ -98,51 +155,6 @@
       <td>Italy</td>
     </tr>
   </table>
-  <script>
-
-  ArrayList<PVector> paikat = new ArrayList<PVector>();
-
-
-void setup() {
-  size(1024, 768); // Asetetaan ikkunalle koko.
-  stroke(255, 255, 255); // Asetetaan piirtoväri.
-}
-
-void luoHiutale() {
-  // Luodaan hiutale ikkunan yläreunaan (y = 0)
-  // Laitetaan sille satunnainen x-koordinaatti
-  // ikkunan vasemman (x = 0) ja oikean (x = width)
-  // reunan väliltä.
-  float y = 0;
-  float x = random(0, width);
-  PVector uusi_paikka = new PVector(x, y);
-
-  // Lisätään uusi hiutaleen paikka listaan.
-  paikat.add(uusi_paikka);
-}
-
-void draw() {
-  luoHiutale();
-
-  // Täytetään ikkuna taustavärillä.
-  background(0, 0, 50);
-
-  for (int i=0; i < paikat.size(); i++) {
-    // Haetaan listasta yksi lumihiutale.
-    PVector paikka = paikat.get(i);
-
-    // Liikutetaan hiutaletta alaspäin vähän.
-    paikka.y += 2;
-
-    // Liikutetaan hiutaletta satunnaisesti vasemmalle ja oikealle.
-    paikka.x += random(-2, 2);
-
-    // Piirretään hiutale.
-    point(paikka.x, paikka.y);
-  }
-}
-  </script>
-
 
   </body>
 </html>
