@@ -1,7 +1,7 @@
 
 
 
-/*
+
 
 
 function testi(arr)
@@ -15,20 +15,23 @@ function testi(arr)
 
 //**************************************
 
-function testi(nro)
+function parillinenPariton(luku)
 {
-  if(nro2%==0)
+  if(luku%2==0)
 {
-  console.log("parillinen");
+  console.log("luku on parillinen");
   }
   else{
-    console.log("pariton");
+    console.log("luku on pariton");
   }
 }
+parillinenPariton(15);
+
+
 
 //******************************************
 
-function testi(kk)
+function testiMorko(kk)
 {
   switch(kk)
   {
@@ -72,6 +75,7 @@ function testi(kk)
     console.log("Et antanut arvoa välillä 1-12");
     }
   }
+  testiMorko(8);
 
 
 //***************************************************
@@ -93,48 +97,57 @@ ptp, puh, email)
   "Keskikatu 3", "04200", "Kerava",
   "0401744562", "jyri.lindroos@keuda.fi");
   console.log(Jyri.sukunimi);
+  console.log(Jyri.sahkoposti);
 
 
 //**************************************
 
 
-function testi(teksti)
+function aakkosissa(teksti)
 {
-  var taulukkoteksti = Array.from(teksti);
-  taulukkoteksti.sort();
-  // .join -liittää
-  // ("") poistaa pilkut
-  var text = taulukkoteksti.join('');
-  console.log(text);
+  var taulu = Array.from(teksti);     //muuttaa tekstin taulukoksi!!!
+  console.log(taulu);
+  taulu.sort();                       //muuttaa aakkosjärjestykseen kirjaimet
+  console.log(taulu);
+  teksti = taulu.join("").toString();     // .join -liittää ja poistaa pilkut
+  return teksti;
 }
+console.log(aakkosissa("webmaster"));  // ilmoittaa sana kirjaimet aakkosjärjestykseen
 
 //****************************************
-*/
 
-function testi(nimi, koe)
+
+
+function arviointi(pisteet)
 {
-    if(koe < 50)
+    if(pisteet < 50)
   {
-    console.log(nimi + "Hylatty");
+      return "Hylatty";
 }
-    else if(koe < 60)
+    else if(pisteet < 60)
   {
-      console.log(nimi + " T1");
+      return " T1";
     }
-    else if(koe < 70)
+    else if(pisteet < 70)
     {
-      console.log(nimi + " T2");
+      return " T2";
     }
-    else if(koe < 80)
+    else if(pisteet < 80)
     {
-      console.log(nimi + " H3");
+      return " H3";
     }
-    else if(koe < 90)
+    else if(pisteet < 90)
     {
-      console.log(nimi + " H4");
+      return " H4";
     }
     else
       {
-        console.log(nimi + " K5");
+      return" K5";
       }
     }
+
+    console.log("Daniel " + arviointi(80));
+    console.log("Viivi " + arviointi(77));
+    console.log("Tiina " + arviointi(88));
+    console.log("Ismael " + arviointi(95));
+    console.log("Tuomas " + arviointi(68));

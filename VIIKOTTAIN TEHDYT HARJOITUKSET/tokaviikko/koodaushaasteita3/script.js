@@ -51,7 +51,6 @@ armstronginLuvut();
         for(y = 1; y < x; y++)
         {
           chr=chr+("*")
-
         }
         console.log(chr);
         chr='';
@@ -103,7 +102,7 @@ function testi(jono)
   }
 }
 teksti = taulukko.toString().replace(/,/g,'');
-console.log("ohjelmointi on hauska");
+console.log("ohjelmointi on hauskaÄÄ");
 }
 
 

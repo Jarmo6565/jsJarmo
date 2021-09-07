@@ -10,29 +10,35 @@
 
 
 
-  function testi() {
-    for(var i = 100; i < 10000; i++){
-      x = i.toString().split('');
-       //console.log(i + "" + x[0]+x[1]+x[2])
-      if(Math.pow(x[0],3)+Math.pow(x[1],3)+Math.pow(x[2],3) == i)
+
+  function armstronginLuvut()
+  {
+    var lt; //lukuTaulukoksi
+    var laskuri = 0;
+    for(var x = 100; x < 1000; x++)
+    {
+      lt = x.toString().split('');
+      // console.log(i + " " + x[0]+x[1]+x[2])
+      if(Math.pow(lt[0],3)+Math.pow(lt[1],3)+Math.pow(lt[2],3) == x)
       {
-        console.log("Tämä:" + i);
+        console.log(x);
    }
   }
 }
+armstronginLuvut();
 
-/*
+
 //*********************************************
 
 
 
-             Tehtävä 2. kuvio
+          //   Tehtävä 2. kuvio
 
 
 
 //********************************************
 
-    function testi()
+    function tahdet()
     {
       var x,y,chr;
       for(x = 1;  x <= 6; x++)
@@ -45,13 +51,13 @@
         chr='';
       }
     }
+        tahdet();
 
 
-/*
 //******************************************
 
 
-             Tehtävä 3. koodikieli
+          //   Tehtävä 3. koodikieli
 
 
 //******************************************
@@ -64,42 +70,43 @@ function testi(jono)
   {
   switch(taulukko[i])
   {
-    case "a":
+  case "a":
     taulukko[i] = 4;
     break;
-    case "e":
+  case "e":
     taulukko[i] = 3;
     break;
-    case "i":
+  case "i":
     taulukko[i] = 1;
     break;
-    case "o":
+  case "o":
     taulukko[i] = 0;
     break;
-    case "s":
+  case "s":
     taulukko[i] = 5;
     break;
   }
 }
 teksti = taulukko.toString().replace(/,/g,'');
-console.log(teksti);
+console.log("ohjelmointi on hauskaaaaaaa");
 }
 
-/*
-//*******************************************
-
-
-          4. Tehtävä Hik-up
 
 
 //*******************************************
-/*
+
+
+        //  4. Tehtävä Hik-up
+
+
+//*******************************************
+
 
 function testi()
   {
     for(i = 1;i <= 100; i++)
     {
-      if(i%15 == 0)
+      if(i%5 == 0)
       {
         console.log('Hik-up');
       }
@@ -116,4 +123,3 @@ function testi()
       }
     }
   }
-*/
