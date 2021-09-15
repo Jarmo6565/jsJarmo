@@ -1,0 +1,14 @@
+body {
+  font-size: 16px;
+  font-family: system-ui;
+  background: -webkit-radial-gradient(top left, #90F6FB,#2C3283);
+}
+
+.form {
+  width: 100%;
+}
+
+  h2 {
+    text-align: center;
+    color: #efbe58;
+  }
