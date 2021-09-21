@@ -1,0 +1,10 @@
+.keskitys {
+ color: green;
+ font-family:"Times New Roman", Times, serif;
+ padding-left:100px;
+}
+body {
+ background-image:url("tribal.jpg");
+ background-repeat:no-repeat;
+ background-position:50% 100%;  /*taustakuvan sijoitus % -luvuilla*/
+}

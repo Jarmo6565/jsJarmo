@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+
+ body {
+   border: 10px double blue;
+   color:blue;
+   padding: 25px;
+   background: url(tikru1.jpg);
+   background-repeat: no-repeat;
+   background-origin: content-box;
+   background-color: rgba(201, 76, 76, 0.3);
+  
+background-clip:initial;
+ }

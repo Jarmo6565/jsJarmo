@@ -5,8 +5,17 @@ body {
     margin-right: auto;
     margin: 200px 0 0 0;
     width: 90%;
+    background-color: #ffcc66;
 }
 
+.header {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  top: 450px;
+  /*border: 3px solid green;*/
+}
 
 .row {
   text-align: center;
