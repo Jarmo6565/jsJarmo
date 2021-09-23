@@ -1,11 +1,11 @@
 
 body {
     display: block;
-  /*  margin-left: auto;
+    /*margin-left: auto;
     margin-right: auto;*/
-    margin:auto;
-    width: 90%; 
-    background-color: #b76ba3;
+    margin: auto;
+    width: 90%;
+    background-color: #ffcc66;
 }
 
 .header {
@@ -19,6 +19,7 @@ body {
 
 .row {
   text-align: center;
+
 }
 
 .card {
