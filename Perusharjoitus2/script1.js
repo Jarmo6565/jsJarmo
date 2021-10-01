@@ -10,14 +10,19 @@ function jarjesta()
   luku2 = parseInt(document.getElementById('toka').value);
   luku3 = parseInt(document.getElementById('kolmas').value);
   document.write("Annoit luvut: " + luku1 + ' ' + luku2 + ' ' + luku3 + "<br>");
+
   if(luku1 < luku2 && luku1 < luku3)
   {
     if(luku2 < luku3)
     {
       document.write("Lukujen järjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
+        //document.getElementById("vastaus").innerHTML = " + luku1 + ' ' + luku2 + ' ' + luku3) ;
     }
     else {
-      document.write("Lukujen järjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
+    document.write("Lukujen järjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
+
+       //document.getElementById("vastaus").innerHTML = " + luku1 + ' ' + luku3 + ' ' + luku2) ;
+return;
     }
   }
   else if(luku2 < luku1 && luku2 < luku3)
@@ -25,9 +30,15 @@ function jarjesta()
     if(luku1<luku3)
     {
       document.write("Lukujen järjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
+
+        //document.getElementById("vastaus").innerHTML = " + luku2 + ' ' + luku1 + ' ' + luku3) ;
+        return;
     }
     else {
       document.write("Lukujen järjestys: " + luku2 + ' ' + luku3 + ' ' + luku1);
+
+        //document.getElementById("vastaus").innerHTML = " + luku2 + ' ' + luku3 + ' ' + luku1) ;
+return;
 
     }
   }
@@ -35,11 +46,17 @@ function jarjesta()
     {
       if(luku1 < luku2)
       {
-        document.write("Lukujen järjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
+       document.write("Lukujen järjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
+
+        //document.getElementById("vastaus").innerHTML = " + luku3 + ' ' + luku1 + ' ' + luku2);
+return;
       }
       else {
-        document.write("Lukujen järjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
+       document.write("Lukujen järjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
 
-      }
-    }
+       //document.getElementById("vastaus").innerHTML = " + luku3 + ' ' + luku2 + ' ' + luku1) ;
+
+       return;
+     }
+   }
   }

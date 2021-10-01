@@ -8,13 +8,19 @@ function ajoneuvo()
   var age = parseInt(document.getElementById('ika').value);
   if(age < 16)
   {
-    document.write("Voit ajaa polkupyärää");
+   document.write("Voit ajaa polkupyärää");
+    //document.getElementById('vastaus').innerHTML = 'Voit' +' ajaa' + ' polkupyärää';
+
   }
   else if(age < 18)
   {
-    document.write("Voit ajaa mopoa");
+   document.write("Voit ajaa mopoa");
+  //  document.getElementById('vastaus').innerHTML = 'Voit'+ 'ajaa' + 'mopoa';
+
   }
   else {
-    document.write("Voit ajaa autoa");
+  document.write("Voit ajaa autoa");
+  //  document.getElementById('vastaus').innerHTML = 'Voit'+ 'ajaa'+ 'autoa';
+
   }
 }

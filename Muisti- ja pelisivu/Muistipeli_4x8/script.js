@@ -1,3 +1,22 @@
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it                  /* Pudotusvalikko  */
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+// -------------------------------------------------------
+
+
 let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
@@ -41,7 +60,7 @@ target.className += ' done';
     }else {
       combosFound++;
       clickedCard = null;
-      if (combosFound === 8) {
+      if (combosFound === 16) {
         alert('YOU WIN!');
       }
     }
