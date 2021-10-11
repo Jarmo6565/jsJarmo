@@ -1,14 +1,18 @@
-
-
-
-//  *********************************
+  //*********************************
 
   //         TEHTÄVÄ 1. Armstrong
 
 
-//  ********************************
-
-
+//********************************
+//Ensimmäisessä haasteessa näette silmukoiden voiman, sillä tässä
+// tehtävässä tehdään silmukka 900 kertaa, jotta
+//löydetään kaikki kolmenumeroiset Amstrongin luvut.
+//Armstrongin luku on sellainen, jonka yksittäisten lukujen
+//kuutiojuurten summa on sama kuin itse luku, eli a3+b3+c3 = abc,
+//eräänä esimerkkinä tästä 371 = 33 + 73 + 13 = 27 + 343 + 1 = 371.
+//Jotta pystytte tekemään tämän, teidän pitää pystyä muuttamaan luku
+//taulukoksi ja se tapahtuu esimerkiksi näin taulukkoLuku = luku.toString().split(’’);
+//Vihjeenä voin sanoa, että vastaukseen tulee 4 lukuarvoa, joista yksi on tuo 371.
 
 
   function armstronginLuvut()
@@ -27,16 +31,17 @@
 }
 armstronginLuvut();
 
-
 //*********************************************
 
 
 
-          //   Tehtävä 2. kuvio
+            // Tehtävä 2. kuvio
 
 
 
 //********************************************
+//Toinen, huomattavasti helpompi haaste, on
+// tulostaa seuraavanlainen kuvio näytölle:
 
     function tahdet()
     {
@@ -51,17 +56,26 @@ armstronginLuvut();
         chr='';
       }
     }
-        tahdet();
+    tahdet();
 
-
-//******************************************
-
-
-          //   Tehtävä 3. koodikieli
 
 
 //******************************************
 
+
+             //Tehtävä 3. koodikieli
+
+
+//******************************************
+// Tee funktio, joka muuttaa ”koodikieleksi”
+//annetun merkkijonon: koodikieleksi(”ohjelmointi
+// on hauskaa”) ja tulostaa sen konsoliin
+// 0Hj3lm01nt1 on h4u5k44, eli muunnat kaikki.
+//a-kirjaimet 4:ksi
+//e-kirjaimet 3:ksi
+//o-kirjaimet 0:ksi
+//i-kirjaimet 1:ksi
+//s-kirjaimet 5:ksi
 
 function testi(jono)
 {
@@ -88,8 +102,10 @@ function testi(jono)
   }
 }
 teksti = taulukko.toString().replace(/,/g,'');
-console.log("ohjelmointi on hauskaaaaaaa");
+console.log("ohjelmointi on hauskaÄÄ");
 }
+
+
 
 
 
@@ -100,26 +116,30 @@ console.log("ohjelmointi on hauskaaaaaaa");
 
 
 //*******************************************
+//Kirjoita ohjelma, joka tulostaa consoliin luvut 1 – 100,
+//mutta siten, että jos luku on 3:lla jaollinen, näytölle
+//tulostuukin ’Hik’ ja jos se on 5:llä jaollinen, näytölle
+//tulostuukin ’up’ ja jos luku on sekä 3:lla, että 5:llä
+//jaollinen, näytölle tulostuu ’hik-up’.
 
 
-function testi()
-  {
-    for(i = 1;i <= 100; i++)
+
+
+    for(n = 1; n <= 100; n++)
     {
-      if(i%5 == 0)
+      if (n%3 == 0 && n%5==0)
       {
         console.log('Hik-up');
       }
-      else if(i%5 == 0)
+      else if(n%5 == 0)
       {
         console.log('up');
       }
-      else if(i%3 == 0)
+      else if(n%3 == 0)
       {
         console.log('Hik');
       }
-      else{
-        console.log(i);
+      else {
+        console.log(n);
       }
     }
-  }

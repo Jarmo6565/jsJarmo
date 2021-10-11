@@ -1,11 +1,5 @@
 function tervehdys()
-
-  {
-
-    alert('Heippa maailma');
-
-    alert('Heippa ');
-
-    alert('maailma');
-
-  }
+{
+alert('Heippa');
+alert('Maailma');
+}
