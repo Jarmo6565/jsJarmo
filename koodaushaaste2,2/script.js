@@ -1,19 +1,28 @@
 
 
+//TEHTÄVÄ 1.
 
-
-
-
-function testi(arr)
+function pieninSuurin(taulu)
 {
-  arr.sort();
-  var pienin = arr.shift();
-  var suurin = arr.pop();
-  console.log("Pienin: " + pienin + " ja suurin: "+ suurin);
+  taulu.sort((a,b) => a-b);
+  var pienin = taulu.shift();
+  var suurin = taulu.pop();
+  console.log("taulukon pienin oli: " + pienin + " ja suurin oli: " + suurin);
 }
+pieninSuurin([8, 4, 9, 6, 2]);
 
+              //TOINEN VAIHTOEHTO JOKA LAJITTELEE AAKKOSJARJESTYKSESSÄ eikä numerojärjestyksessä!!!!!
+/*
+function pieninSuurin(taulu)
+{
+var pienin = taulu.shift();
+var suurin = taulu.pop();
+console.log("taulukon pienin oli: " + pienin + " suurin oli " + suurin);
+}
+pieninSuurin([6,8,4,2,0,11,55,34,989]);
+*/
 
-//**************************************
+//TEHTÄVÄ 2.
 
 function parillinenPariton(luku)
 {
@@ -29,11 +38,10 @@ parillinenPariton(15);
 
 
 
-//******************************************
-
-function testiMorko(kk)
+// TEHTÄVÄ 3.
+function numeroNimeksi(numero)
 {
-  switch(kk)
+  switch(numero)
   {
   case 1:
     console.log("Tammikuu");
@@ -54,7 +62,7 @@ function testiMorko(kk)
     console.log("Kesäkuu");
     break;
   case 7:
-    console.log("Heinäikuu");
+    console.log("Heinäkuu");
     break;
   case 8:
     console.log("Elokuu");
@@ -75,32 +83,33 @@ function testiMorko(kk)
     console.log("Et antanut arvoa välillä 1-12");
     }
   }
-  testiMorko(8);
+numeroNimeksi(8);
 
 
-//***************************************************
 
-
-function testi(etunimi, sukunimi, lahiosoite, pnro,
-ptp, puh, email)
+//TEHTÄVÄ 4.
+class Osoiterekisteri
+ {
+ constructor(etunimi, sukunimi, lahiosoite, postinumero, postitoimipaikka, puhelin, sahkoposti)
   {
-    this.etunimi = etunimi,
-    this.sukunimi = sukunimi,
-    this.lahiosoite = lahiosoite,
-    this.postinumero = pnro,
-    this.postitoimipaikka = ptp,
-    this.puhelinnumero = puh,
-    this.sahkoposti = email
+    this.etunimi = etunimi;
+    this.sukunimi = sukunimi;
+    this.lahiosoite = lahiosoite;
+    this.postinumero = postinumero;
+    this.postitoimipaikka = postitoimipaikka;
+    this.puhelinnumero = puhelin;
+    this.sahkoposti = sahkoposti;
 
   }
-  var Jyri = new testi("Jyri", "Lindroos",
-  "Keskikatu 3", "04200", "Kerava",
-  "0401744562", "jyri.lindroos@keuda.fi");
+}
+
+  var Jyri = new Osoiterekisteri("Jyri","Lindroos","Keskikatu 3", "04200", "Kerava","0401744562", "Jyri.Lindroos@keuda.fi");
+  var Eija = new Osoiterekisteri("Eija", "Lumme" , "Keskikatu 3", "04200", "Kerava", "Eija.Lumme@keuda.fi");
+  // ... ja sitten testataan!
   console.log(Jyri.sukunimi);
-  console.log(Jyri.sahkoposti);
+  console.log(Eija.postitoimipaikka);
 
 
-//**************************************
 
 
 function aakkosissa(teksti)
@@ -114,7 +123,6 @@ function aakkosissa(teksti)
 }
 console.log(aakkosissa("webmaster"));  // ilmoittaa sana kirjaimet aakkosjärjestykseen
 
-//****************************************
 
 
 

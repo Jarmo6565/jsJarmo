@@ -7,7 +7,7 @@ function js_style()
   teksti.style.fontFamily = 'Permanent Marker';
   teksti.style.fontSize = '48px';
   teksti.style.color = 'red';
-}
+}/*
 // Tehtävä 2
 // Ohje tähän löytyy esim.
 // https://www.w3schools.com/jsref/met_doc_getelementsbyname.asp

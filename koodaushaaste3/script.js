@@ -102,7 +102,7 @@ function testi(jono)
   }
 }
 teksti = taulukko.toString().replace(/,/g,'');
-console.log("ohjelmointi on hauskaÄÄ");
+console.log(testi(jono));
 }
 
 
@@ -112,7 +112,7 @@ console.log("ohjelmointi on hauskaÄÄ");
 //*******************************************
 
 
-        //  4. Tehtävä Hik-up
+        // 4. Tehtävä Hik-up
 
 
 //*******************************************

@@ -3,7 +3,7 @@
 
 function tehtavaYksi(a,b)
 {
-  //var summa;
+  // var summa;
   //summa = luku1 + luku2;
   //return summa;
 
