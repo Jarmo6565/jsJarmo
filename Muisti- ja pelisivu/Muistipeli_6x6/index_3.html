@@ -5,8 +5,6 @@
     <meta name="wievport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style_navbar.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <title>Memory Games</title>
@@ -15,114 +13,58 @@
 
 
           <div class="navbar">
-            <a href="file:///C:/Users/Tapio/Documents/Javascript_ohjelmointi/jsJarmo/Muisti-%20ja%20pelisivu/index_navbar.html">Home</a>
+            <a href="file:///C:/Users/Tapio/OneDrive%20-%20Keski-Uudenmaan%20koulutuskuntayhtym%C3%A4/Tiedostot/Javascript%20Suomeksi/Muisti-%20ja%20pelisivu/index_navbar.html">Home</a>
             <a href="https://www.ampparit.com/pelit">News</a>
-            <a href="https://www.w3schools.com/html/default.asp">Kotisivu 1</a>
-            <a href="https://www.w3schools.com/css/default.asp">Kotisivu 2</a>
+            <a href="file:///C:/Users/Tapio/OneDrive%20-%20Keski-Uudenmaan%20koulutuskuntayhtym%C3%A4/Tiedostot/Javascript%20Suomeksi/Muisti-%20ja%20pelisivu/Kotisivu%201/index.html">Kotisivu 1</a>
+            <a href="file:///C:/Users/Tapio/OneDrive%20-%20Keski-Uudenmaan%20koulutuskuntayhtym%C3%A4/Tiedostot/Javascript%20Suomeksi/Muisti-%20ja%20pelisivu/Kotisivu%202/index.html">Kotisivu 2</a>
             <a href="https://www.funnygames.fi/uudet-pelit.html">Pelisivu</a>
 
             <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Muistipelit<i class="fa fa-caret-down"></i>
+            <button class="dropbtn" onclick="myFunction()">Muistipeli<i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content" id="myDropdown">
-            <a href="file:///C:/Users/Tapio/Documents/Javascript_ohjelmointi/jsJarmo/Muisti-%20ja%20pelisivu/Muistipeli_4x4/index.html">Muistipeli 4 x 4</a>
-            <a href="file:///C:/Users/Tapio/Documents/Javascript_ohjelmointi/jsJarmo/Muisti-%20ja%20pelisivu/Muistipeli_4x6/index_2.html">Muistipeli 4 x 6</a>
-            <a href="file:///C:/Users/Tapio/Documents/Javascript_ohjelmointi/jsJarmo/Muisti-%20ja%20pelisivu/Muistipeli_4x8/index_3.html">Muistipeli 4 x 8</a>
+            <a href="Muistipeli_4X4/index.html">Muistipeli 4 x 4</a>
+            <a href="Muistipeli_4X6/index_2.html">Muistipeli 4 x 6</a>
+            <a href="Muistipeli_4X8/index_3.html">Muistipeli 6 x 6</a>
             </div>
             </div>
           </div>
 
-
-            <div class="header">
-            <h1>Muistipeli 6 x 6</h1>
-            <p>Yritä löytää kaikille ruuduille kaksi saman väristä ruutua<br>
-                 pelialustalla mahdollisimman nopeasti</p>
-            </div>
-            </header>
-            <body>
-
-
-            <div class="row">
-
-            <div
-            data-color="pink"
-            class="card pink color-hidden "
-            onclick="onCardClicked(event)">
-            </div>
-
-            <div
-            data-color="yellow"
-            class="card yellow color-hidden "
-            onclick="onCardClicked(event)">
-            </div>
-
-            <div
-            data-color="orange"
-            class="card orange color-hidden "
-            onclick="onCardClicked(event)">
-            </div>
-
-            <div
-            data-color="orange"
-            class="card orange color-hidden "
-            onclick="onCardClicked(event)">
-            </div>
+  <div class="header">
+    <h1>Muistipeli 6 x 6</h1>
+    <p>Yritä löytää kaikille ruuduille kaksi saman väristä ruutua<br>
+       pelialustalla mahdollisimman nopeasti</p>
+  </div>
+  </header>
+  <body>
 
 
-            <div
-            data-color="black"
-            class="card black color-hidden "
-            onclick="onCardClicked(event)">
-            </div>
-
-
-            <div
-            data-color="green"
-            class="card green color-hidden "
-            onclick="onCardClicked(event)">
-            </div>
-
-            <div
-            data-color="cyan"
-            class="card cyan color-hidden"
-            onclick="onCardClicked(event)">
-            </div>
-
-
-           <div
-           data-color="light blue"
-           class="card light blue color-hidden "
-           onclick="onCardClicked(event)">
-           </div>
-        </div>
-
-
-
-          <div class="row">
+        <div class="row">
 
           <div
           data-color="pink"
-          class="card pink color-hidden"
+          class="card pink color-hidden "
           onclick="onCardClicked(event)">
           </div>
 
           <div
-          data-color="red"
-          class="card red color-hidden"
+          data-color="yellow"
+          class="card yellow color-hidden "
           onclick="onCardClicked(event)">
           </div>
 
           <div
-          data-color="blue"
-          class="card blue color-hidden"
+          data-color="orange"
+          class="card orange color-hidden "
           onclick="onCardClicked(event)">
           </div>
 
           <div
-          data-color="green"
-          class="card green color-hidden"
+          data-color="orange"
+          class="card orange color-hidden "
           onclick="onCardClicked(event)">
           </div>
+
 
           <div
           data-color="black"
@@ -130,29 +72,59 @@
           onclick="onCardClicked(event)">
           </div>
 
-         <div
-         data-color="light blue"
-         class="card light blue color-hidden "
-         onclick="onCardClicked(event)">
-         </div>
 
-         <div
-         data-color="green"
-         class="card green color-hidden"
-         onclick="onCardClicked(event)">
-         </div>
+          <div
+          data-color="cyan"
+          class="card cyan color-hidden "
+          onclick="onCardClicked(event)">
+          </div>
+      </div>
 
-         <div
-         data-color="cyan"
-         class="card cyan color-hidden"
-         onclick="onCardClicked(event)">
-         </div>
+
+
+      <div class="row">
+
+        <div
+        data-color="pink"
+        class="card pink color-hidden"
+        onclick="onCardClicked(event)">
         </div>
 
+        <div
+        data-color="red"
+        class="card red color-hidden"
+        onclick="onCardClicked(event)">
+        </div>
+
+        <div
+        data-color="blue"
+        class="card blue color-hidden"
+        onclick="onCardClicked(event)">
+        </div>
+
+        <div
+        data-color="green"
+        class="card green color-hidden"
+        onclick="onCardClicked(event)">
+        </div>
+
+        <div
+        data-color="black"
+        class="card black color-hidden "
+        onclick="onCardClicked(event)">
+        </div>
+
+       <div
+       data-color="red"
+       class="card red color-hidden "
+       onclick="onCardClicked(event)">
+       </div>
+      </div>
 
 
 
-        <div class="row">
+
+      <div class="row">
 
         <div
         data-color="teal"
@@ -189,23 +161,11 @@
         class="card light blue color-hidden "
         onclick="onCardClicked(event)">
         </div>
-
-        <div
-        data-color="green"
-        class="card green color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="cyan"
-        class="card cyan color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-        </div>
+  </div>
 
 
 
-        <div class="row">
+      <div class="row">
 
         <div
         data-color="cyan"
@@ -241,18 +201,6 @@
         <div
         data-color="light blue"
         class="card light blue color-hidden "
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="green"
-        class="card green color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="cyan"
-        class="card cyan color-hidden"
         onclick="onCardClicked(event)">
         </div>
       </div>
@@ -261,18 +209,6 @@
       <div class="row">
 
         <div
-        data-color="cyan"
-        class="card cyan color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="yellow"
-        class="card yellow color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
         data-color="green"
         class="card green color-hidden"
         onclick="onCardClicked(event)">
@@ -284,83 +220,76 @@
         onclick="onCardClicked(event)">
         </div>
 
-        <div
-        data-color="black"
-        class="card black color-hidden "
-        onclick="onCardClicked(event)">
-        </div>
+
+      <div
+      data-color="green"
+      class="card green color-hidden"
+      onclick="onCardClicked(event)">
+      </div>
+
+      <div
+      data-color="cyan"
+      class="card cyan color-hidden"
+      onclick="onCardClicked(event)">
+      </div>
 
 
-        <div
-        data-color="light blue"
-        class="card light blue color-hidden "
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="green"
-        class="card green color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="cyan"
-        class="card cyan color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-        </div>
+      <div
+      data-color="cyan"
+      class="card cyan color-hidden"
+      onclick="onCardClicked(event)">
+      </div>
 
 
-      <div class="row">
+     <div
+     data-color="light blue"
+     class="card light blue color-hidden "
+     onclick="onCardClicked(event)">
+  </div>
+  </div>
 
-        <div
-        data-color="cyan"
-        class="card cyan color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
+  <div class="row">
 
-        <div
-        data-color="yellow"
-        class="card yellow color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
+    <div
+    data-color="teal"
+    class="card teal color-hidden"
+    onclick="onCardClicked(event)">
+    </div>
 
-        <div
-        data-color="green"
-        class="card green color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
+    <div
+    data-color="red"
+    class="card red color-hidden"
+    onclick="onCardClicked(event)">
+    </div>
 
-        <div
-        data-color="cyan"
-        class="card cyan color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
+    <div
+    data-color="light blue"
+    class="card light blue color-hidden"
+    onclick="onCardClicked(event)">
+    </div>
 
-        <div
-        data-color="black"
-        class="card black color-hidden "
-        onclick="onCardClicked(event)">
-        </div>
+    <div
+    data-color="teal"
+    class="card teal color-hidden"
+    onclick="onCardClicked(event)">
+    </div>
+
+    <div
+    data-color="black"
+    class="card black color-hidden "
+    onclick="onCardClicked(event)">
+    </div>
+
+    <div
+    data-color="black"
+    class="card black color-hidden "
+    onclick="onCardClicked(event)">
+    </div>
+</div>
+
+      <div id=footer;>
+        Copyright @copy Jarmo Partanen
 
 
-        <div
-        data-color="light blue"
-        class="card light blue color-hidden "
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="green"
-        class="card green color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-
-        <div
-        data-color="cyan"
-        class="card cyan color-hidden"
-        onclick="onCardClicked(event)">
-        </div>
-        </div>
   </body>
 </html>
