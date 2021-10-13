@@ -156,3 +156,13 @@ box-sizing: border-box;
 .color-hidden {
     background-color: #eee;
 }
+
+#footer{
+  width: auto;
+  margin-bottom: 0px;
+  background-color: 202, 240, 10);
+  padding: 5px;
+  color: white;
+/*  border: 2px solid white;*/
+  text font-size: 2px;
+}

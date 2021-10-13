@@ -60,7 +60,7 @@ target.className += ' done';
     }else {
       combosFound++;
       clickedCard = null;
-      if (combosFound === 16) {
+      if (combosFound === 36) {
         alert('YOU WIN!');
       }
     }

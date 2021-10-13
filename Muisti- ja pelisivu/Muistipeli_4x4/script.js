@@ -61,7 +61,7 @@ target.className += ' done';
     }else {
       combosFound++;
       clickedCard = null;
-      if (combosFound === 8) {
+      if (combosFound === 16) {
         alert('YOU WIN!');
       }
     }
