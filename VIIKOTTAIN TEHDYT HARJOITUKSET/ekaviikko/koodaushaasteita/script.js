@@ -1,27 +1,32 @@
 
 
 
-function laskeYhteen(luku1, luku2)
+function tehtavaYksi(a,b)
 {
-  var summa;
-  summa = luku1 + luku2;
-  return summa;
-}
+  // var summa;
+  //summa = luku1 + luku2;
+  //return summa;
+
 // Kutsutaan functiota
-console.log(laskeYhteen(2,3));
-
-
-function ekaMuuttuja()
-{
-  var taulukkomuuttuja = [34,566,71,89];
-
-  console.log(taulukkomuuttuja[3]);
+console.log(a + b);
 }
+
+
+
+
+function tehtavaKaksi()
+{
+  var taulukkomuuttuja = [34,566, 71, 89];
+
+  console.log(taulukkomuuttuja[0]);
+}
+
+
 
 
 function tehtavaKolme(a, b)
 {
-  if((4 + 6) < 100)
+  if((a + b) < 100)
 {
     console.log("Lukujen summa on alle 100");
   }
@@ -30,11 +35,9 @@ function tehtavaKolme(a, b)
     }
   }
 
-
-  function tehtavaNelja(a,b)
+  function tehtavaNelja(a, b)
   {
-    if (a == b)
-    {
+    if (a == b) {
       console.log("Samat");
     }
     else {
@@ -43,61 +46,66 @@ function tehtavaKolme(a, b)
   }
 
 
-
   function tehtavaViisi(a,b,c)
   {
 
-    var aika = a * 3600 + b * 60 + c;
-    return aika;
+    //var laskeAika = a * 3600 + b * 60 + c;
+    //return laskeAika;
+    console.log(a * 3600 + b * 60 + c);
   }
-    console.log(tehtavaViisi(10,10,10));
-
-    //1 minuutti = 60sekunttia --> 60 minuuttia = 60 * 60 sekunttia = 3600 sekunttia
 
 
-
-  function paiviksi(spaiva, skuukausi, svuosi)
+  function tehtavaKuusi(a, b, c)
   {
-      svuosi = svuosi * 365.25;
-      switch(skuukausi)
+    function muutaVuodet(c)
     {
+      return c * 365.25;
+    }
+    function muutaKuukaudet(b)
+    {
+      switch(b - 1)
+      {
+        case 0:
+          return 0;
+          break;
         case 1:
-          spaiva = spaiva;
+          return 31;
           break;
         case 2:
-          spaiva = spaiva + 31;
+          return 59;
           break;
         case 3:
-          spaiva = spaiva + 59;
+          return 90;
           break;
         case 4:
-          spaiva = spaiva + 90;
+          return 120;
           break;
         case 5:
-          spaiva = spaiva + 120;
+          return 151;
           break;
         case 6:
-          spaiva = spaiva + 151;
+          return 181;
           break;
         case 7:
-          spaiva = spaiva + 181;
+          return 212;
           break;
         case 8:
-          spaiva = spaiva + 212;
+          return 243;
           break;
         case 9:
-          spaiva = spaiva + 243;
+          return 273;
           break;
         case 10:
-          spaiva = spaiva + 273;
+          return 304;
           break;
         case 11:
-          spaiva = spaiva + 304;
+          return 334;
           break;
-          case 12:
-          spaiva = spaiva + 334;
-          break;
-        }
-        return svuosi + spaiva;
+        default:
+        return 0;
     }
-  console.log(paiviksi(17,3,2021)-paiviksi(22,5,1965));
+  }
+  Syntymaaika = muutaVuodet(c) + muutaKuukaudet(b) + a;
+  Nyt = muutaVuodet(2020) + muutaKuukaudet(3)+ 25;
+  console.log(Nyt-Syntymaaika);
+}

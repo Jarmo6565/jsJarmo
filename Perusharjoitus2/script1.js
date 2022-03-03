@@ -54,7 +54,7 @@ return;
       else {
        document.write("Lukujen järjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
 
-       //document.getElementById("vastaus").innerHTML = " + luku3 + ' ' + luku2 + ' ' + luku1) ;
+       document.getElementById("vastaus").innerHTML = " + luku3 + ' ' + luku2 + ' ' + luku1) ;
 
        return;
      }

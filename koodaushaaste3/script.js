@@ -102,7 +102,7 @@ function testi(jono)
   }
 }
 teksti = taulukko.toString().replace(/,/g,'');
-console.log(testi(jono));
+console.log(teksti);
 }
 
 

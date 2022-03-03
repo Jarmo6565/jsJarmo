@@ -61,6 +61,6 @@ function etsiSuurin()
 
 
   //console.log("Annoit luvut: " + l1 + ' ' + l2 + ' ' + l3 + ' ' + l4 + ' ' + l5).innerHTML = suurin;
-    //document.getElementById("suurin niistä on").innerHTML = + l1, l2, l3, l4, l5, suurin;
+    //document.getElementById("Suurin niistä on").innerHTML = + l1, l2, l3, l4, l5, suurin;
 
   }
